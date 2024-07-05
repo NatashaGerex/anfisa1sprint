@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% load static %}
 {% block title %}
   Анфиса для друзей. Подробное описание мороженого
 {% endblock %}
@@ -13,7 +14,7 @@
       <img 
         class="img-fluid" 
         height="400" width="300"
-        {% static src="img/image-holder.png" %}
+        src="{% static 'img/image-holder.png' %}"
         >      
     </div>
 {% endblock %}
